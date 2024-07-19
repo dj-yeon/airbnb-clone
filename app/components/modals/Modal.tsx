@@ -33,7 +33,6 @@ const Modal: React.FC<ModalProps> = ({
 
   useEffect(() => {
     setShowModal(isOpen);
-    console.log('******* showModal', isOpen);
   }, [isOpen]);
 
   const handleClose = useCallback(() => {
