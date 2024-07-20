@@ -36,7 +36,7 @@ const LoginModal = () => {
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     setIsLoading(true);
 
-    // signIn - app/api/auth/[...nextauth]/route.ts에 정의됨 
+    // signIn - app/api/auth/[...nextauth]/route.ts에 정의됨
     signIn('credentials', {
       ...data,
       redirect: false,
@@ -86,13 +86,13 @@ const LoginModal = () => {
         outline
         label="Continue with Google"
         icon={FcGoogle}
-        onClick={() => {}}
+        onClick={() => signIn('google')}
       />
       <Button
         outline
         label="Continue with Github"
         icon={AiFillGithub}
-        onClick={() => {}}
+        onClick={() => signIn('github')}
       />
       <div
         className="
